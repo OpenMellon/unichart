@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"github.com/OpenMellon/openpdf/unichart/dataset/sequence"
+	"github.com/OpenMellon/unichart/dataset/sequence"
 )
 
 func TestHistogramSeries(t *testing.T) {

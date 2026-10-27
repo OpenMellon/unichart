@@ -7,7 +7,7 @@ integrate with OpenPDF in order to provide charting capabilities.
 # Installation
 
 ```bash
-go get -u github.com/OpenMellon/openpdf/unichart
+go get -u github.com/OpenMellon/unichart
 ```
 
 # Examples

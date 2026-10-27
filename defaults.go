@@ -1,6 +1,6 @@
 package unichart
 
-import "github.com/OpenMellon/openpdf/unichart/render"
+import "github.com/OpenMellon/unichart/render"
 
 const (
 	// defaultChartHeight is the default chart height.

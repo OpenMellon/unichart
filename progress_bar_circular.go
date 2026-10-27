@@ -4,8 +4,8 @@ import (
 	"io"
 	"math"
 
-	"github.com/OpenMellon/openpdf/unichart/mathutil"
-	"github.com/OpenMellon/openpdf/unichart/render"
+	"github.com/OpenMellon/unichart/mathutil"
+	"github.com/OpenMellon/unichart/render"
 )
 
 // CircularProgressBar is a component that will render circular progress bar component.

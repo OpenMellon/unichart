@@ -3,7 +3,7 @@ package render
 import (
 	"strings"
 
-	"github.com/OpenMellon/openpdf/unichart/mathutil"
+	"github.com/OpenMellon/unichart/mathutil"
 )
 
 // TextHorizontalAlign is an enum for the horizontal alignment options.

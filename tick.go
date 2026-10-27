@@ -4,10 +4,10 @@ import (
 	"math"
 	"strconv"
 
-	"github.com/OpenMellon/openpdf/unichart/dataset"
-	"github.com/OpenMellon/openpdf/unichart/dataset/sequence"
-	"github.com/OpenMellon/openpdf/unichart/mathutil"
-	"github.com/OpenMellon/openpdf/unichart/render"
+	"github.com/OpenMellon/unichart/dataset"
+	"github.com/OpenMellon/unichart/dataset/sequence"
+	"github.com/OpenMellon/unichart/mathutil"
+	"github.com/OpenMellon/unichart/render"
 )
 
 // TickPosition is an enumeration of possible tick drawing positions.

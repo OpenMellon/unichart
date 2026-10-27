@@ -1,8 +1,8 @@
 package dataset
 
 import (
-	"github.com/OpenMellon/openpdf/unichart/dataset/sequence"
-	"github.com/OpenMellon/openpdf/unichart/render"
+	"github.com/OpenMellon/unichart/dataset/sequence"
+	"github.com/OpenMellon/unichart/render"
 )
 
 // YAxisType is a type of y-axis. It can either be primary or secondary.

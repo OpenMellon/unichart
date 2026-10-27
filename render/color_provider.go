@@ -3,7 +3,7 @@ package render
 import (
 	"image/color"
 
-	"github.com/OpenMellon/openpdf/unichart/dataset/sequence"
+	"github.com/OpenMellon/unichart/dataset/sequence"
 )
 
 type (

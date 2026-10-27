@@ -4,8 +4,8 @@ import (
 	"io"
 	"math"
 
-	"github.com/OpenMellon/openpdf/unichart/mathutil"
-	"github.com/OpenMellon/openpdf/unichart/render"
+	"github.com/OpenMellon/unichart/mathutil"
+	"github.com/OpenMellon/unichart/render"
 )
 
 // LinearProgressBar is a component that will render progress bar component.

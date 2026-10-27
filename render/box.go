@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/OpenMellon/openpdf/unichart/mathutil"
+	"github.com/OpenMellon/unichart/mathutil"
 )
 
 // NewBox returns a new (set) box.

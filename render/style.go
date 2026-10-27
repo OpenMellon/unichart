@@ -5,8 +5,8 @@ import (
 	"image/color"
 	"strings"
 
-	"github.com/OpenMellon/openpdf/unichart/dataset/sequence"
-	"github.com/OpenMellon/openpdf/unichart/mathutil"
+	"github.com/OpenMellon/unichart/dataset/sequence"
+	"github.com/OpenMellon/unichart/mathutil"
 )
 
 const (

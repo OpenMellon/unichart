@@ -1,9 +1,9 @@
 package unichart
 
 import (
-	"github.com/OpenMellon/openpdf/unichart/dataset"
-	"github.com/OpenMellon/openpdf/unichart/dataset/sequence"
-	"github.com/OpenMellon/openpdf/unichart/render"
+	"github.com/OpenMellon/unichart/dataset"
+	"github.com/OpenMellon/unichart/dataset/sequence"
+	"github.com/OpenMellon/unichart/render"
 )
 
 // Axis is a chart feature detailing what values happen where.

@@ -4,8 +4,8 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"github.com/OpenMellon/openpdf/unichart/dataset/sequence"
-	"github.com/OpenMellon/openpdf/unichart/mathutil"
+	"github.com/OpenMellon/unichart/dataset/sequence"
+	"github.com/OpenMellon/unichart/mathutil"
 )
 
 type mockValuesProvider struct {

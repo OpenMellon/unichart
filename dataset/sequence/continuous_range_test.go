@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"github.com/OpenMellon/openpdf/unichart/mathutil"
+	"github.com/OpenMellon/unichart/mathutil"
 )
 
 func TestRangeTranslate(t *testing.T) {

@@ -4,7 +4,7 @@ import (
 	"math"
 	"sort"
 
-	"github.com/OpenMellon/openpdf/unichart/mathutil"
+	"github.com/OpenMellon/unichart/mathutil"
 )
 
 var (

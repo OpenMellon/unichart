@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/OpenMellon/openpdf/unichart/dataset/sequence"
-	"github.com/OpenMellon/openpdf/unichart/mathutil"
-	"github.com/OpenMellon/openpdf/unichart/render"
+	"github.com/OpenMellon/unichart/dataset/sequence"
+	"github.com/OpenMellon/unichart/mathutil"
+	"github.com/OpenMellon/unichart/render"
 )
 
 // Interface Assertions.

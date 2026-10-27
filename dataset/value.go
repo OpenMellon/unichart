@@ -1,8 +1,8 @@
 package dataset
 
 import (
-	"github.com/OpenMellon/openpdf/unichart/mathutil"
-	"github.com/OpenMellon/openpdf/unichart/render"
+	"github.com/OpenMellon/unichart/mathutil"
+	"github.com/OpenMellon/unichart/render"
 )
 
 // Value is a chart value.

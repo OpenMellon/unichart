@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/OpenMellon/openpdf/unichart/dataset/sequence"
-	"github.com/OpenMellon/openpdf/unichart/render"
+	"github.com/OpenMellon/unichart/dataset/sequence"
+	"github.com/OpenMellon/unichart/render"
 )
 
 // HistogramSeries is a special type of series that draws as a histogram.

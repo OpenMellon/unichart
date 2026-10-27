@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"github.com/OpenMellon/openpdf/unichart/dataset/sequence"
+	"github.com/OpenMellon/unichart/dataset/sequence"
 )
 
 func TestLinearRegressionSeries(t *testing.T) {
