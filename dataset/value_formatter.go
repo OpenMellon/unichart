@@ -29,37 +29,37 @@ type ValueFormatterProvider interface {
 }
 
 // ValueFormatter is a function that takes a value and produces a string.
-type ValueFormatter func(v interface{}) string
+type ValueFormatter func(v any) string
 
 // TimeValueFormatter is a ValueFormatter for timestamps.
-func TimeValueFormatter(v interface{}) string {
+func TimeValueFormatter(v any) string {
 	return formatTime(v, defaultDateFormat)
 }
 
 // TimeHourValueFormatter is a ValueFormatter for timestamps.
-func TimeHourValueFormatter(v interface{}) string {
+func TimeHourValueFormatter(v any) string {
 	return formatTime(v, defaultDateHourFormat)
 }
 
 // TimeMinuteValueFormatter is a ValueFormatter for timestamps.
-func TimeMinuteValueFormatter(v interface{}) string {
+func TimeMinuteValueFormatter(v any) string {
 	return formatTime(v, defaultDateMinuteFormat)
 }
 
 // TimeDateValueFormatter is a ValueFormatter for timestamps.
-func TimeDateValueFormatter(v interface{}) string {
+func TimeDateValueFormatter(v any) string {
 	return formatTime(v, "2006-01-02")
 }
 
 // TimeValueFormatterWithFormat returns a time formatter with a given format.
 func TimeValueFormatterWithFormat(format string) ValueFormatter {
-	return func(v interface{}) string {
+	return func(v any) string {
 		return formatTime(v, format)
 	}
 }
 
 // TimeValueFormatterWithFormat is a ValueFormatter for timestamps with a given format.
-func formatTime(v interface{}, dateFormat string) string {
+func formatTime(v any, dateFormat string) string {
 	if typed, isTyped := v.(time.Time); isTyped {
 		return typed.Format(dateFormat)
 	}
@@ -73,7 +73,7 @@ func formatTime(v interface{}, dateFormat string) string {
 }
 
 // IntValueFormatter is a ValueFormatter for float64.
-func IntValueFormatter(v interface{}) string {
+func IntValueFormatter(v any) string {
 	switch t := v.(type) {
 	case int:
 		return strconv.Itoa(t)
@@ -89,13 +89,13 @@ func IntValueFormatter(v interface{}) string {
 }
 
 // FloatValueFormatter is a ValueFormatter for float64.
-func FloatValueFormatter(v interface{}) string {
+func FloatValueFormatter(v any) string {
 	return FloatValueFormatterWithFormat(v, defaultFloatFormat)
 }
 
 // PercentValueFormatter is a formatter for percent values.
 // NOTE: it normalizes the values, i.e. multiplies by 100.0.
-func PercentValueFormatter(v interface{}) string {
+func PercentValueFormatter(v any) string {
 	if typed, isTyped := v.(float64); isTyped {
 		return FloatValueFormatterWithFormat(typed*100.0, defaultPercentValueFormat)
 	}
@@ -103,7 +103,7 @@ func PercentValueFormatter(v interface{}) string {
 }
 
 // FloatValueFormatterWithFormat is a ValueFormatter for float64 with a given format.
-func FloatValueFormatterWithFormat(v interface{}, floatFormat string) string {
+func FloatValueFormatterWithFormat(v any, floatFormat string) string {
 	if typed, isTyped := v.(int); isTyped {
 		return fmt.Sprintf(floatFormat, float64(typed))
 	}
@@ -121,7 +121,7 @@ func FloatValueFormatterWithFormat(v interface{}, floatFormat string) string {
 
 // KValueFormatter is a formatter for K values.
 func KValueFormatter(k float64, vf ValueFormatter) ValueFormatter {
-	return func(v interface{}) string {
+	return func(v any) string {
 		return fmt.Sprintf("%0.0fσ %s", k, vf(v))
 	}
 }

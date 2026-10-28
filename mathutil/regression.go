@@ -2,10 +2,8 @@ package mathutil
 
 import "errors"
 
-var (
-	// ErrPolyRegArraysSameLength is a common error.
-	ErrPolyRegArraysSameLength = errors.New("polynomial array inputs must be the same length")
-)
+// ErrPolyRegArraysSameLength is a common error.
+var ErrPolyRegArraysSameLength = errors.New("polynomial array inputs must be the same length")
 
 // PolyRegression returns the polynomial regression of a given degree over
 // the given values.

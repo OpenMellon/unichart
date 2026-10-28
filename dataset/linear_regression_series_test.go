@@ -3,8 +3,8 @@ package dataset
 import (
 	"testing"
 
-	"github.com/stretchr/testify/require"
 	"github.com/OpenMellon/unichart/dataset/sequence"
+	"github.com/stretchr/testify/require"
 )
 
 func TestLinearRegressionSeries(t *testing.T) {

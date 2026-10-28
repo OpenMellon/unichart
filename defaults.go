@@ -66,12 +66,10 @@ const (
 	defaultBarWidth = 50
 )
 
-var (
-	// defaultBackgroundPadding is the default canvas padding config.
-	defaultBackgroundPadding = render.Box{
-		Top:    5,
-		Left:   5,
-		Right:  5,
-		Bottom: 5,
-	}
-)
+// defaultBackgroundPadding is the default canvas padding config.
+var defaultBackgroundPadding = render.Box{
+	Top:    5,
+	Left:   5,
+	Right:  5,
+	Bottom: 5,
+}

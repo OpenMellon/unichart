@@ -22,7 +22,7 @@ func (cs ConcatSeries) GetValue(index int) (x, y float64) {
 		if typed, isValuesProvider := s.(ValuesProvider); isValuesProvider {
 			len := typed.Len()
 			if index < cursor+len {
-				x, y = typed.GetValues(index - cursor) //FENCEPOSTS.
+				x, y = typed.GetValues(index - cursor) // FENCEPOSTS.
 				return
 			}
 			cursor += typed.Len()

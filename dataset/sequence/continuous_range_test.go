@@ -3,8 +3,8 @@ package sequence
 import (
 	"testing"
 
-	"github.com/stretchr/testify/require"
 	"github.com/OpenMellon/unichart/mathutil"
+	"github.com/stretchr/testify/require"
 )
 
 func TestRangeTranslate(t *testing.T) {

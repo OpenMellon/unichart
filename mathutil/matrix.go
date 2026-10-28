@@ -520,7 +520,7 @@ func (m *Matrix) QR() (q, r *Matrix) {
 
 	}
 
-	//Q Matrix:
+	// Q Matrix:
 	for k = cols - 1; k >= 0; k-- {
 		q.Set(k, k, 1.0)
 		for j = k; j < cols; j++ {

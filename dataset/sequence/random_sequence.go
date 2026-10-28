@@ -6,9 +6,7 @@ import (
 	"time"
 )
 
-var (
-	_ Sequence = (*RandomSequence)(nil)
-)
+var _ Sequence = (*RandomSequence)(nil)
 
 // RandomValues returns an array of random values.
 func RandomValues(count int) []float64 {
@@ -57,7 +55,7 @@ func (r *RandomSequence) GetValue(_ int) float64 {
 	} else if r.max != nil {
 		return r.rnd.Float64() * *r.max
 	} else if r.min != nil {
-		return *r.min + (r.rnd.Float64())
+		return *r.min + r.rnd.Float64()
 	}
 
 	return r.rnd.Float64()

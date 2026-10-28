@@ -97,10 +97,7 @@ func (bbs *BollingerBandsSeries) GetBoundedLastValues() (x, y1, y2 float64) {
 	}
 	period := bbs.GetPeriod()
 	seriesLength := bbs.InnerSeries.Len()
-	startAt := seriesLength - period
-	if startAt < 0 {
-		startAt = 0
-	}
+	startAt := max(seriesLength-period, 0)
 
 	vb := NewValueBufferWithCapacity(period)
 	for index := startAt; index < seriesLength; index++ {

@@ -7,9 +7,7 @@ import (
 	"github.com/OpenMellon/unichart/mathutil"
 )
 
-var (
-	_ Sequence = (*Wrapper)(nil)
-)
+var _ Sequence = (*Wrapper)(nil)
 
 // Wrapper is a utility wrapper for sequence providers. Wrapper provides more
 // functionality for sequences while also implementing the sequence interface.

@@ -3,9 +3,9 @@ package dataset
 import (
 	"testing"
 
-	"github.com/stretchr/testify/require"
 	"github.com/OpenMellon/unichart/dataset/sequence"
 	"github.com/OpenMellon/unichart/mathutil"
+	"github.com/stretchr/testify/require"
 )
 
 type mockValuesProvider struct {

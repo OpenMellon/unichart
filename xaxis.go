@@ -58,9 +58,9 @@ func (xa XAxis) GetTickPosition(defaults ...TickPosition) TickPosition {
 
 // GetTicks returns the ticks for a series.
 // The coalesce priority is:
-// 	- User Supplied Ticks (i.e. Ticks array on the axis itself).
-// 	- Range ticks (i.e. if the range provides ticks).
-//	- Generating continuous ticks based on minimum spacing and canvas width.
+//   - User Supplied Ticks (i.e. Ticks array on the axis itself).
+//   - Range ticks (i.e. if the range provides ticks).
+//   - Generating continuous ticks based on minimum spacing and canvas width.
 func (xa XAxis) GetTicks(r render.Renderer, ra sequence.Range, defaults render.Style, vf dataset.ValueFormatter) []Tick {
 	if len(xa.Ticks) > 0 {
 		return xa.Ticks
@@ -89,7 +89,7 @@ func (xa XAxis) Measure(r render.Renderer, canvasBox render.Box, ra sequence.Ran
 
 	var ltx, rtx int
 	var tx int
-	var left, right, bottom = math.MaxInt32, 0, 0
+	left, right, bottom := math.MaxInt32, 0, 0
 	for index, t := range ticks {
 		v := t.Value
 

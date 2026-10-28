@@ -122,7 +122,6 @@ func TestMatrixIsSymmetric(t *testing.T) {
 		{2, 1, 2},
 		{3, 2, 1},
 	}).IsSymmetric())
-
 }
 
 func TestMatrixGet(t *testing.T) {

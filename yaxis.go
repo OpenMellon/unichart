@@ -61,9 +61,9 @@ func (ya YAxis) GetTickStyle() render.Style {
 
 // GetTicks returns the ticks for a series.
 // The coalesce priority is:
-// 	- User Supplied Ticks (i.e. Ticks array on the axis itself).
-// 	- Range ticks (i.e. if the range provides ticks).
-//	- Generating continuous ticks based on minimum spacing and canvas width.
+//   - User Supplied Ticks (i.e. Ticks array on the axis itself).
+//   - Range ticks (i.e. if the range provides ticks).
+//   - Generating continuous ticks based on minimum spacing and canvas width.
 func (ya YAxis) GetTicks(r render.Renderer, ra sequence.Range, defaults render.Style, vf dataset.ValueFormatter) []Tick {
 	if len(ya.Ticks) > 0 {
 		return ya.Ticks
@@ -94,7 +94,7 @@ func (ya YAxis) Measure(r render.Renderer, canvasBox render.Box, ra sequence.Ran
 	}
 
 	ya.TickStyle.InheritFrom(ya.Style.InheritFrom(defaults)).WriteToRenderer(r)
-	var minx, maxx, miny, maxy = math.MaxInt32, 0, math.MaxInt32, 0
+	minx, maxx, miny, maxy := math.MaxInt32, 0, math.MaxInt32, 0
 	var maxTextHeight int
 	for _, t := range ticks {
 		v := t.Value

@@ -5,8 +5,8 @@ import (
 	"math"
 	"testing"
 
-	"github.com/stretchr/testify/require"
 	"github.com/OpenMellon/unichart/dataset/sequence"
+	"github.com/stretchr/testify/require"
 )
 
 func TestBollingerBandSeries(t *testing.T) {

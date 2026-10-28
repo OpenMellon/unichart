@@ -83,10 +83,8 @@ type TextStyle struct {
 
 type text struct{}
 
-var (
-	// Text contains utilities for text.
-	Text = &text{}
-)
+// Text contains utilities for text.
+var Text = &text{}
 
 func (t text) Measure(r Renderer, text string, style Style) Box {
 	style.GetTextOptions().WriteToRenderer(r)

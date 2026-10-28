@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/stretchr/testify/require"
 	"github.com/OpenMellon/unichart/dataset/sequence"
+	"github.com/stretchr/testify/require"
 )
 
 func TestContinuousSeries(t *testing.T) {
@@ -32,10 +32,10 @@ func TestContinuousSeries(t *testing.T) {
 
 func TestContinuousSeriesValueFormatter(t *testing.T) {
 	cs := ContinuousSeries{
-		XValueFormatter: func(v interface{}) string {
+		XValueFormatter: func(v any) string {
 			return fmt.Sprintf("%f foo", v)
 		},
-		YValueFormatter: func(v interface{}) string {
+		YValueFormatter: func(v any) string {
 			return fmt.Sprintf("%f bar", v)
 		},
 	}

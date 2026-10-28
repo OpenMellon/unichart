@@ -1,8 +1,6 @@
 package sequence
 
-var (
-	_ Sequence = (*ArraySequence)(nil)
-)
+var _ Sequence = (*ArraySequence)(nil)
 
 // ArraySequence is a wrapper for an array of floats that implements
 // the `Sequence` interface.
