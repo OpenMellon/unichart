@@ -1,6 +1,8 @@
 module github.com/OpenMellon/unichart
 
-go 1.27.3
+go 1.26.0
+
+toolchain go1.27.3
 
 require github.com/stretchr/testify v1.12.1
 
